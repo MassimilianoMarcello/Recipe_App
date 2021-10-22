@@ -46,16 +46,23 @@
   list-style-type: none;
   outline: none;
    background-color: #282c34;
+   
 }
 
 html {
   font-size: 62.5%;
+  
+   
 }
 
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-left: #d6d6d6 solid  0.1rem;
+   border-right: #d6d6d6 solid  0.1rem;
+   border-top: #d6d6d6 solid  0.1rem;
+   border-bottom: #d6d6d6 solid  0.1rem;
 }
 p{
 font-size: 2rem;
@@ -63,6 +70,7 @@ font-size: 2rem;
   color: #40b48e;
   margin-left: 0.5rem;
 margin-top: -34px;
+
 }
 
 
@@ -83,11 +91,12 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: #282c34;
-  border-radius: 0.5rem;
-  margin-top: 5rem;
+  border-radius: 2rem;
+  margin-top: 4rem;
   margin-bottom: 5rem;
   box-shadow: 1rem 2rem 5rem #282c34;
   position: relative;
+  border:#8b8b8b solid  0.1rem;
   
 }
 
@@ -95,18 +104,22 @@ h1 {
   position: absolute;
   top: -3rem;
   left: 0;
-  background-color: rgb(233, 72, 72);
+ 
   width: calc(100% - 0.4rem);
   border-radius: 0.5rem;
   padding: 0.2rem;
+  border: solid 0.1rem #f25234 ;
 }
 
 .alert h3 {
   font-size: 1.8rem;
-  color: #fff;
+  border: solid 0.1rem #f25234 ;
+  border-radius: 25%;
+  color: #f25234;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .search-form input {
@@ -116,22 +129,30 @@ h1 {
   margin: 0 0.9rem;
   border-radius: 0.5rem;
   height: 4rem;
-  background-color: #eda332;
+  background-color: #f7b34e;
 }
 
 .search-form input[type="text"] {
   padding: 0 0.5rem;
   width: 64%;
-  color: #555;
+  color: rgb(75, 54, 54);
  
 }
 
 .search-form input[type="submit"] {
   width: 25%;
+  /* text-transform: uppercase; */
+  background-color: #40b48e;
+  color: #fff;
+   font-family: "Source Sans Pro", sans-serif;
+}
+.search-form input[type="submit"]:hover {
+  width: 25%;
   text-transform: uppercase;
   background-color: #40b48e;
   color: #fff;
    font-family: "Source Sans Pro", sans-serif;
+   border: solid #bbbebd;
 }
 
 .recipes {
@@ -148,12 +169,12 @@ h1 {
   margin: 3rem;
   display: flex;
   flex-direction: column;
-  background-color: #d3d3d3;
-  padding: 2rem;
+  background-color: #f5c783;
+  padding: 0.2rem;
   position: relative;
   border-radius: 0.5rem;
-  box-shadow: 0.1rem 0.5rem 1rem 
-#f25234;
+  /* box-shadow: 0.05rem 0.25rem 0.5rem 
+#b1afaf; */
 }
 
 .recipe h2 {
@@ -194,7 +215,7 @@ h1 {
 
 .ingredient-list {
   margin-top: 1rem;
-  background-color: #f0f0f0;
+  
   border-radius: 0.5rem;
   padding: 0.5rem;
 }
@@ -204,8 +225,8 @@ h1 {
 }
 
 .ingredient-text {
-  font-size: 1.5rem;
-  color: #888;
+  font-size: 2rem;
+  color: rgb(199, 195, 195);
 }
 
 .ingredient-weight {
