@@ -46,8 +46,10 @@ const[alert,setAlert]= useState("")
     <>
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>Use to find your next meal!</p>
+          <a  href="./index">
+            <img src={logo} className="App-logo" alt="logo" />
+          </a>
+           <p>Use to find your next meal!</p>
           <form className="search-form" onSubmit={onSubmit}>
             {alert !== "" && <Alert alert={alert} />}
             <input
