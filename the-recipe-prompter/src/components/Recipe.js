@@ -11,7 +11,7 @@ const Recipe = ({recipe}) => {
         <a href={url} target="_blank" rel="noopener noreferrer">
           Go to the recipe
         </a>
-        <button onClick={() => setShow(!show)}>Ingredients</button>
+        <button onClick={() => setShow(!show)}>See Ingredients</button>
         {show && <RecipeInfo ingredients={ingredients} />}
       </div>
     );

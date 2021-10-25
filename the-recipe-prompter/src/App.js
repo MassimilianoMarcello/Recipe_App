@@ -3,7 +3,7 @@ import logo from "./logorecipe.svg";
 import "./App.css";
 import Axios from "axios";
 import{v4 as uuidv4}from'uuid';
-import alert from './components/Alert'
+// import alert from './components/Alert'
 import Recipe from './components/Recipe';
 import Alert from "./components/Alert";
 
@@ -46,7 +46,7 @@ const[alert,setAlert]= useState("")
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>App suggesting dishes to create</p>
+        <p>Use to find your next meal!</p>
         <form className="search-form" onSubmit={onSubmit}>
           {alert !== "" && <Alert alert={alert} />}
           <input
