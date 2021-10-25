@@ -43,27 +43,31 @@ const[alert,setAlert]= useState("")
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Use to find your next meal!</p>
-        <form className="search-form" onSubmit={onSubmit}>
-          {alert !== "" && <Alert alert={alert} />}
-          <input
-            type="text"
-            placeholder="Enter Ingredient"
-            autoComplete="off"
-            onChange={onChange}
-            value={query}
-          />
-          <input type="submit" value="search" />
-        </form>
-      </header>
-      <article className="recipes">
-        {recipes !== [] &&
-          recipes.map((recipe) => <Recipe key={uuidv4} recipe={recipe} />)}
-      </article>
-    </div>
+    <>
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>Use to find your next meal!</p>
+          <form className="search-form" onSubmit={onSubmit}>
+            {alert !== "" && <Alert alert={alert} />}
+            <input
+              type="text"
+              placeholder="Enter Ingredient"
+              autoComplete="off"
+              onChange={onChange}
+              value={query}
+            />
+            <input type="submit" value="search" />
+          </form>
+        </header>
+        <article className="recipes">
+          {recipes !== [] &&
+            recipes.map((recipe) => <Recipe key={uuidv4} recipe={recipe} />)}
+        </article>
+      </div>
+      <div className="landingImage"></div>
+      <div className="copyright">MassDev©2021 </div>
+    </>
   );
 }
 

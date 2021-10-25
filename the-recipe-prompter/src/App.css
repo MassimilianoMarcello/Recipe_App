@@ -233,3 +233,19 @@ h1 {
   color: #40b48e;
   font-size: 1.3rem;
 }
+.landingImage{
+   background-image: url("Food-Ingredients.jpg");
+   height: 500px; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+   border-left: #d6d6d6 solid  0.1rem;
+   border-right: #d6d6d6 solid  0.1rem;
+   border-top: #d6d6d6 solid  0.1rem;
+   border-bottom: #d6d6d6 solid  0.1rem;
+}
+.copyright{
+  color: #f7efe3;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: medium;
+}
