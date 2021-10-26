@@ -59,7 +59,11 @@ const[alert,setAlert]= useState("")
               onChange={onChange}
               value={query}
             />
-            <input type="submit" value="search" />
+            <input type="submit" value="Search" />
+
+            
+
+            
           </form>
         </header>
         <article className="recipes">
